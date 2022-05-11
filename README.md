@@ -17,6 +17,6 @@ sudo dnf install neovim
 
 > install config 
 ```
-cd ~/.config/ && git clone https://github.com/MR3MMZ/nvim.git
+cd ~/.config/ && git clone https://github.com/MaxwelMazur/my-nvim.git
 ```
 <br>
