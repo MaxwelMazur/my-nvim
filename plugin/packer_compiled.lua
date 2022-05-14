@@ -74,6 +74,16 @@ _G.packer_plugins = {
     path = "/home/maxmazur/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ale = {
+    loaded = true,
+    path = "/home/maxmazur/.local/share/nvim/site/pack/packer/start/ale",
+    url = "https://github.com/dense-analysis/ale"
+  },
+  ["barbar.nvim"] = {
+    loaded = true,
+    path = "/home/maxmazur/.local/share/nvim/site/pack/packer/start/barbar.nvim",
+    url = "https://github.com/romgrk/barbar.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/maxmazur/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -104,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/maxmazur/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/home/maxmazur/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/maxmazur/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -114,10 +129,10 @@ _G.packer_plugins = {
     path = "/home/maxmazur/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
-  ["indent-blankline.nvim"] = {
+  ["gotests-vim"] = {
     loaded = true,
-    path = "/home/maxmazur/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
-    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+    path = "/home/maxmazur/.local/share/nvim/site/pack/packer/start/gotests-vim",
+    url = "https://github.com/buoto/gotests-vim"
   },
   ["lsp_signature.nvim"] = {
     loaded = true,

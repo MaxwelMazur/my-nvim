@@ -23,7 +23,7 @@ return require('packer').startup(function()
   }
   use 'kyazdani42/nvim-web-devicons'
   use 'tamton-aquib/staline.nvim'
-  use 'lukas-reineke/indent-blankline.nvim'
+  -- use 'lukas-reineke/indent-blankline.nvim' -- lines de identação de codigo
   use 'tpope/vim-surround'
   use 'windwp/nvim-autopairs'
 
@@ -62,6 +62,13 @@ return require('packer').startup(function()
 	use {
 	  'lewis6991/gitsigns.nvim',
 	  -- tag = 'release' -- To use the latest release
+	}
+	use 'dense-analysis/ale'
+	use 'buoto/gotests-vim'
+	use 'github/copilot.vim'
+	use {
+	  'romgrk/barbar.nvim',
+		requires = {'kyazdani42/nvim-web-devicons'}
 	}
 end)
 

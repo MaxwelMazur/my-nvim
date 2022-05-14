@@ -3,9 +3,9 @@ vim.cmd([[ map q :q<CR> ]])
 
 -- Para Salvar com 'Ctrl + S' nos modos: Normal, Inserção e Visual
 -- Precisa adicionar a linha: stty -ixon , ao seu ~/.bashrc
-vim.cmd([[ nnoremap <C-s> :w<CR> ]])
-vim.cmd([[ inoremap <C-s> <Esc>:w<CR>l ]]) vim.cmd([[ vnoremap <C-s> <Esc>:w<CR> ]])
-
+vim.cmd([[ map <C-s> :w<CR> ]])
+vim.cmd([[ map <C-s> <Esc>:w<CR>l ]]) 
+vim.cmd([[ map <C-s> <Esc>:w<CR> ]])
 -- Selecionar tudo com 'Ctrl + A'
 vim.cmd([[ map <C-a> ggVG ]])
 
@@ -32,3 +32,16 @@ vim.cmd([[ nnoremap <C-p> :Telescope find_files<CR> ]])
 vim.cmd([[ nnoremap <C-f> :Telescope live_grep<CR> ]])
 vim.cmd([[ nnoremap <C-d> :t.<CR> ]])
 vim.cmd([[ nnoremap <C-j> :ToggleTerm<CR> ]])
+
+local map = vim.api.nvim_set_keymap
+local opts = { noremap = true, silent = true }
+
+-- Move to previous/next
+map('n', '<A-,>', ':BufferPrevious<CR>', opts)
+map('n', '<A-.>', ':BufferNext<CR>', opts)
+-- Re-order to previous/next
+map('n', '<A-<>', ':BufferMovePrevious<CR>', opts)
+map('n', '<A->>', ':BufferMoveNext<CR>', opts)
+-- Goto buffer in position...
+-- Close buffer
+map('n', '<A-q>', ':BufferClose<CR>', opts)
