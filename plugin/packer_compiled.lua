@@ -159,11 +159,6 @@ _G.packer_plugins = {
     path = "/home/maxmazur/.local/share/nvim/site/pack/packer/start/nvim-comment",
     url = "https://github.com/terrortylor/nvim-comment"
   },
-  ["nvim-dap"] = {
-    loaded = true,
-    path = "/home/maxmazur/.local/share/nvim/site/pack/packer/start/nvim-dap",
-    url = "https://github.com/mfussenegger/nvim-dap"
-  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/maxmazur/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -199,6 +194,11 @@ _G.packer_plugins = {
     path = "/home/maxmazur/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["presence.nvim"] = {
+    loaded = true,
+    path = "/home/maxmazur/.local/share/nvim/site/pack/packer/start/presence.nvim",
+    url = "https://github.com/andweeb/presence.nvim"
+  },
   ["staline.nvim"] = {
     loaded = true,
     path = "/home/maxmazur/.local/share/nvim/site/pack/packer/start/staline.nvim",
@@ -214,11 +214,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/maxmazur/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["toggleterm.nvim"] = {
-    loaded = true,
-    path = "/home/maxmazur/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
-    url = "https://github.com/akinsho/toggleterm.nvim"
   },
   ["vim-go"] = {
     loaded = true,

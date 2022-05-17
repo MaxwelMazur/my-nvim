@@ -27,11 +27,10 @@ vim.cmd([[
 	autocmd BufNewFile *.cpp :call AutoCpp()
 ]])
 
-vim.cmd([[ nnoremap <C-n> :NvimTreeToggle<CR> ]])
+vim.cmd([[ nnoremap <C-n> :Ntree<CR> ]])
 vim.cmd([[ nnoremap <C-p> :Telescope find_files<CR> ]])
 vim.cmd([[ nnoremap <C-f> :Telescope live_grep<CR> ]])
 vim.cmd([[ nnoremap <C-d> :t.<CR> ]])
-vim.cmd([[ nnoremap <C-j> :ToggleTerm<CR> ]])
 
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
@@ -45,3 +44,11 @@ map('n', '<A->>', ':BufferMoveNext<CR>', opts)
 -- Goto buffer in position...
 -- Close buffer
 map('n', '<A-q>', ':BufferClose<CR>', opts)
+map('n', '<A-4>', ':GoTestFunc<CR>', opts)
+map('n', '<A-5>', ':GoRun<CR>', opts)
+map('n', '<A-2>', ':GoDebugBreakpoint<CR>', opts)
+map('n', '<A-j>', ':GoDebugStart<CR>', opts)
+map('n', '<A-l>', ':GoDebugContinue<CR>', opts)
+map('n', '<C-l>', ':GoDebugNext<CR>', opts)
+map('n', '<C-j>', ':GoDebugStep<CR>', opts)
+map('n', '<C-h>', ':GoDebugStop<CR>', opts)

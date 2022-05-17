@@ -51,14 +51,12 @@ return require('packer').startup(function()
   	"startup-nvim/startup.nvim",
   	requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
   	config = function()
-  	  require"startup".setup()
+			require("startup").setup() 
   	end
 	}
 	
 	use 'fatih/vim-go' 
 	use 'terrortylor/nvim-comment'
-	use 'mfussenegger/nvim-dap'
-	use {"akinsho/toggleterm.nvim", tag = 'v1.*'}
 	use {
 	  'lewis6991/gitsigns.nvim',
 	  -- tag = 'release' -- To use the latest release
@@ -70,5 +68,7 @@ return require('packer').startup(function()
 	  'romgrk/barbar.nvim',
 		requires = {'kyazdani42/nvim-web-devicons'}
 	}
+	use 'andweeb/presence.nvim'
 end)
+
 
