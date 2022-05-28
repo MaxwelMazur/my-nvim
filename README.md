@@ -11,7 +11,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 > install neovim in fedora
 ```
-sudo dnf install neovim 
+brew install neovim 
 ```
 <br>
 
