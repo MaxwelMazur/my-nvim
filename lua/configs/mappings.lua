@@ -27,10 +27,16 @@ vim.cmd([[
 	autocmd BufNewFile *.cpp :call AutoCpp()
 ]])
 
-vim.cmd([[ nnoremap <C-n> :Ntree<CR> ]])
+-- vim.cmd([[ nnoremap <C-n> :Neotree<CR> ]])
 vim.cmd([[ nnoremap <C-p> :Telescope find_files<CR> ]])
 vim.cmd([[ nnoremap <C-f> :Telescope live_grep<CR> ]])
 vim.cmd([[ nnoremap <C-d> :t.<CR> ]])
+
+-- NeoTree
+vim.cmd([[ nnoremap <C-n> :Neotree toggle right<cr> ]])
+
+-- Comment
+vim.cmd([[ nnoremap <A-m> :CommentToggle<CR> ]])
 
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
