@@ -4,6 +4,7 @@ vim.cmd([[ set number ]])
 vim.cmd([[ set relativenumber ]])
 vim.cmd([[ set tabstop=4 ]])
 vim.cmd([[ set shiftwidth=4 ]])
+vim.cmd([[ set nowrap ]])
 vim.cmd([[ set guifont=DroidSansMono\ Nerd\ Font\ Mono:h12 ]])
 vim.cmd([[ set encoding=utf-8 ]])
 
@@ -199,4 +200,5 @@ vim.cmd([[
 	let g:go_fmt_fail_silently = 1
 	let g:go_fmt_autosave = 0
 ]])
+
 

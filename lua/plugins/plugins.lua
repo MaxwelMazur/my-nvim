@@ -283,5 +283,3 @@ return require('packer').startup(function()
 	use 'ray-x/guihua.lua' -- recommanded if need floating window support
 	use 'fatih/vim-go'
 end)
-
-
