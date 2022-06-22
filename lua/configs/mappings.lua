@@ -27,34 +27,46 @@ vim.cmd([[
 	autocmd BufNewFile *.cpp :call AutoCpp()
 ]])
 
+
 -- vim.cmd([[ nnoremap <C-n> :Neotree<CR> ]])
 vim.cmd([[ nnoremap <C-p> :Telescope find_files<CR> ]])
 vim.cmd([[ nnoremap <C-f> :Telescope live_grep<CR> ]])
 vim.cmd([[ nnoremap <C-d> :t.<CR> ]])
 
+vim.cmd([[ map <C-h> :vertical resize -3<CR> ]])
+vim.cmd([[ map <C-l> :vertical resize +3<CR> ]])
+vim.cmd([[ map <C-j> :resize +3<CR> ]])
+vim.cmd([[ map <C-k> :resize -3<CR> ]])
+
 -- NeoTree
 vim.cmd([[ nnoremap <C-n> :Neotree toggle right<cr> ]])
 
 -- Comment
-vim.cmd([[ nnoremap <A-m> :CommentToggle<CR> ]])
+
+vim.cmd([[ imap <s-f1> <space><esc>"myBEa=<c-r>=<c-r>m<enter><del> ]])
 
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
+map('n', '<space>vs', ':vs<CR>', opts)
+map('n', '<space>sp', ':sp<CR>', opts)
+map('n', '<space><space>', ':CommentToggle<CR>', opts)
+
+
 -- Move to previous/next
-map('n', '<A-,>', ':BufferPrevious<CR>', opts)
-map('n', '<A-.>', ':BufferNext<CR>', opts)
--- Re-order to previous/next
-map('n', '<A-<>', ':BufferMovePrevious<CR>', opts)
-map('n', '<A->>', ':BufferMoveNext<CR>', opts)
--- Goto buffer in position...
--- Close buffer
-map('n', '<A-q>', ':BufferClose<CR>', opts)
-map('n', '<A-4>', ':GoTestFunc<CR>', opts)
-map('n', '<A-5>', ':GoRun<CR>', opts)
-map('n', '<A-2>', ':GoDebugBreakpoint<CR>', opts)
-map('n', '<A-j>', ':GoDebugStart<CR>', opts)
-map('n', '<A-l>', ':GoDebugContinue<CR>', opts)
-map('n', '<C-l>', ':GoDebugNext<CR>', opts)
-map('n', '<C-j>', ':GoDebugStep<CR>', opts)
-map('n', '<C-h>', ':GoDebugStop<CR>', opts)
+-- map('n', '<A-,>', ':BufferPrevious<CR>', opts)
+-- map('n', '<A-.>', ':BufferNext<CR>', opts)
+-- -- Re-order to previous/next
+-- map('n', '<A-<>', ':BufferMovePrevious<CR>', opts)
+-- map('n', '<A->>', ':BufferMoveNext<CR>', opts)
+-- -- Goto buffer in position...
+-- -- Close buffer
+-- map('n', '<A-q>', ':BufferClose<CR>', opts)
+-- map('n', '<A-4>', ':GoTestFunc<CR>', opts)
+-- map('n', '<A-5>', ':GoRun<CR>', opts)
+-- map('n', '<A-2>', ':GoDebugBreakpoint<CR>', opts)
+-- map('n', '<A-j>', ':GoDebugStart<CR>', opts)
+-- map('n', '<A-l>', ':GoDebugContinue<CR>', opts)
+-- map('n', '<C-l>', ':GoDebugNext<CR>', opts)
+-- map('n', '<C-j>', ':GoDebugStep<CR>', opts)
+-- map('n', '<C-h>', ':GoDebugStop<CR>', opts)
